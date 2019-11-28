@@ -1,10 +1,129 @@
-.App {
-  text-align: center;
-}
+/* GLOBAL TAGS */
+body {background: #e6e6e6; font-family: 'Source Sans Pro', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+.body-wrapper {background: #fff; /* height: 100vh; */ margin: 0 auto; max-width: 1440px;}
+.full-width {margin: 0 auto; padding: 1em;}
+.px-none {padding: 0rem;}
 
-.App-logo {
-  height: 40vmin;
-}
+
+/* HEADER */
+.header {background: #ffdb78; padding: 2rem 0 0 0; z-index: 3;}
+
+  /* header top */
+  .h-top {margin: 0; margin-bottom: 3.5rem;}
+      @media (min-width: 576px) {.h-top {margin-bottom: 5rem;}}
+      @media (min-width: 768px) {.h-top {margin-bottom: 6rem;}}
+      @media (min-width: 992px) {.h-top {margin-bottom: 7rem;}}
+
+  .h-logo {height: 0.5rem;}
+      @media (min-width: 576px) {.h-logo {height: 0.65rem;}}
+  .h-search {width: 1.2em;}
+
+  /* header bottom */ 
+  .h-bottom {margin: 0;}
+  .page-title {margin: 0 0 2rem; width: auto;}
+      @media (min-width: 576px) {.page-title {width: auto;}}
+      @media (min-width: 768px) {.page-title {max-width: 507px;}}
+      @media (min-width: 992px) {.page-title {max-width: 507px;}}
+  .page-title h2.circ-b {color: #262930; font-family: "CircularStd-Bold"; font-size: 40px; font-weight: 400; line-height: 44px; }
+      @media (min-width: 576px) {.page-title h2.circ-b {font-size: 40px; font-weight: 400; line-height: 50px;}}
+      @media (min-width: 768px) {.page-title h2.circ-b {font-size: 50px; font-weight: 400; line-height: 60px;}}
+      @media (min-width: 992px) {.page-title h2.circ-b {font-size: 60px; font-weight: 400; line-height: 70px;}}
+  .page-subtitle {font-size: 1rem; line-height: 1.875rem; margin: 0 0 2.5rem; width: auto;}
+      @media (min-width: 576px) {.page-subtitle {width: auto;}}
+      @media (min-width: 768px) {.page-subtitle {font-size: 1.25rem; line-height: 2.25rem; max-width: 300px;}}
+      @media (min-width: 992px) {.page-subtitle {max-width: 430px;}}
+  .search-form {margin: 0 0 2.5rem; width: auto;}
+      @media (min-width: 576px) {.search-form {width: auto;}}
+      @media (min-width: 768px) {.search-form {max-width: 250px;}}
+      @media (min-width: 992px) {.search-form {max-width: 400px;}}
+  .featured-product {padding: 0 2rem;}
+      @media (min-width: 576px) {.featured-product {padding: 0 0 0 1.2rem;}}
+  .featured-product-image {padding: 0; width: 100%; z-index: 3;}
+      @media (min-width: 576px) {.featured-product-image {max-height: 585px; max-width: 554px; padding: 0 0 0 1.2rem;}}
+
+
+
+/* MAIN CONTENT */
+.main {padding: 2rem 0 0 0; z-index: 3;}
+  /* most popular */ 
+  .most-popular-wrap {margin: 2rem auto; width: 100%;}
+      @media (min-width: 768px) {.most-popular-wrap {margin: 4rem auto;}}
+  .mp-title {color: #262930; font-family: "Source Sans Pro"; font-size: 40px; font-weight: 700; line-height: 44px; padding-bottom: 1.5rem; text-align: center;}
+      @media (min-width: 768px) {.mp-title {font-size: 42px; line-height: 52px; padding-bottom: 1.5rem; text-align: left;}}
+  .mp-subtitle {font-size: 20px; font-weight: 400; line-height: 30px; padding-bottom: 1.5rem; text-align: center;}
+      @media (min-width: 768px) {.mp-subtitle {font-size: 16px; line-height: 23px; padding-bottom: 1.5rem; text-align: left;}}
+  .mp-carousel-arrows {padding-bottom: 2.5rem; text-align: center; width: auto;}
+      @media (min-width: 768px) {.mp-carousel-arrows {text-align: left;}}
+    .carousel-arrow {width: 3rem;}
+  /* most popular carousel items */
+  .mp-items-list {max-width: 715px; min-width: 500px;}
+      .mp-item-block {}
+          .mp-item-image {width: 100%; width: 14rem;}
+          .mp-item-title {color: #262930; font-family: "Source Sans Pro"; font-size: 20px; font-weight: 700; line-height: 30px;}
+              @media (min-width: 576px) {.mp-item-title {font-size: 24px;}}
+          .mp-item-rating {}
+          .mp-item-price {color: #262930; font-family: "Source Sans Pro"; font-size: 1rem; font-weight: 400; line-height: 30px;}
+              @media (min-width: 576px) {.mp-item-price {font-size: 1.2rem;}}
+  /* shop now button group */
+  .mp-bttn-shop-now {padding-bottom: 2.5rem; text-align: center; width: auto;}
+      @media (min-width: 768px) {.mp-bttn-shop-now {text-align: left;}}
+  .bttn-shop-now {font-family: "CircularStd-Bold"; font-size: 18px; font-weight: 400; line-height: 52px; padding: 0.375rem 2rem;}
+  /* inventory */
+  .inventory-section {display: flex; flex-wrap: wrap; height: 100%; width: auto;}
+      @media (min-width: 576px) {.inventory-section {padding: 0 0.5rem;}}
+  .inventory-section > [class*='col-'] {display: flex; flex-direction: row; margin: 0 auto; padding: 1rem 1rem 0;}
+      @media (min-width: 576px) {.inventory-section > [class*='col-'] {padding: 1rem 0.5rem;}}
+  .inventory-item-wrap {position: relative; text-align: left; color: white;}
+  .inventory-item-title {position: absolute; font-family: "CircularStd-Bold"; line-height: 2.3rem; top: 2.5rem; left: 3rem; font-size: 4.5vh;}
+      @media (min-width: 576px) {.inventory-item-title {top: 3vmax; left: 3.2vmax; font-size: 3.25vh;}}
+      @media (min-width: 768px) {.inventory-item-title {top: 3.5vmax; left: 3vmax; font-size: 5vh;}}
+  .inventory-item-image {width: 100%;}
+
+
+
+/* FOOTER */
+.footer {padding: 3.125rem 0 2rem 0; z-index: 3;}
+      @media (min-width: 576px) {.footer {padding: 6rem 0 5rem 0;}}
+      @media (min-width: 768px) {.footer {padding: 6rem 0 5rem 0;}}
+  .footer-logo, .about, .customer-care, .follow-us {display: block; margin: 0 auto; padding: 0 2rem 2rem;}
+      @media (min-width: 768px) {.footer-logo, .about, .customer-care, .follow-us {padding: 0 0 2rem;}}
+      @media (min-width: 992px) {.footer-logo, .about, .customer-care, .follow-us {padding: 0;}}
+  /* footer logo */ 
+  .footer .h-logo {display: block; height: 0.8rem; margin: 0 auto;}
+      @media (min-width: 768px) {.footer .h-logo {margin: 0;}}
+  .footer h5 {font-weight: 700;}
+  /* footer social media, follow us */
+  .follow-us {margin: 0 0 0.5rem; text-align: center;}
+      @media (min-width: 992px) {.follow-us {text-align: left;}}
+      .follow-us h5 {margin: 0 0 1.5rem;}
+          @media (min-width: 992px) {.follow-us h5 {margin: 0 0 0.8rem;}}
+  .i-social-wrap {display: inline-flex; margin: 0 1rem; width: 1.75rem;}
+      @media (min-width: 992px) {.i-social-wrap {margin: 0 1rem 0 0;}}
+  /* footer copyright block */ 
+  .copyright {color: #5b6274; font-family: "Source Sans Pro"; font-size: 12px; font-weight: 400; height: 78px; line-height: 24px; width: 213px; z-index: 3;}
+  .copyright {margin: 0 auto; padding: 0; text-align: center;}
+      @media (min-width: 992px) {.copyright {margin: 0; text-align: left;}}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Original App CSS :: NOT USED */
+
+.App { text-align: center; } 
+
+.App-logo { height: 40vmin; }
 
 .App-header {
   background-color: #282c34;
@@ -17,6 +136,4 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
-}
+.App-link { color: #09d3ac; }
