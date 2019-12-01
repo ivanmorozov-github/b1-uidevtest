@@ -13,7 +13,8 @@ function Header() {
                 <div className="col-12 col-sm-6 px-none">
                     <div className="page-title"><h2 className="circ-b">A new way to shop safely</h2></div>
                     <div className="page-subtitle">
-                        <p>We’re a service that’s supported on blockchain by the cryptocurrency EOS, so you can be sure that our sellers are trusted and verified.</p>
+                        <p className="hide-smallsrceen">We’re a service that’s supported on blockchain by the cryptocurrency EOS, so you can be sure that our sellers are trusted and verified.</p>
+                        <p className="hide-largescreen">Be sure that your purchase is verified and secure on blockchain with the cryptocurrency EOS.</p>
                     </div>
                     <div className="input-group search-form">
                         <div className="input-group-prepend">

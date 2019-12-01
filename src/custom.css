@@ -32,6 +32,8 @@ body {background: #e6e6e6; font-family: 'Source Sans Pro', sans-serif; -webkit-f
       @media (min-width: 576px) {.page-subtitle {width: auto;}}
       @media (min-width: 768px) {.page-subtitle {font-size: 1.25rem; line-height: 2.25rem; max-width: 300px;}}
       @media (min-width: 992px) {.page-subtitle {max-width: 430px;}}
+      @media (max-width: 576px) {.page-subtitle .hide-smallsrceen {display: none;}}
+      @media (min-width: 576px) {.page-subtitle .hide-largescreen {display: none;}}
   .search-form {margin: 0 0 2.5rem; width: auto;}
       @media (min-width: 576px) {.search-form {width: auto;}}
       @media (min-width: 768px) {.search-form {max-width: 250px;}}

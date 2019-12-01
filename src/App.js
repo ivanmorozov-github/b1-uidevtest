@@ -6,7 +6,7 @@ import './custom.css';
 
 // components and includes
 import Header from './components/headerComp/header';
-import Content from './components/contentComp/content';
+import Content from './components/contentComp/allContent';
 import Footer from './components/footerComp/footer';
 
 
