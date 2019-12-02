@@ -1,10 +1,15 @@
 import React from 'react';
+import ContentTitle from './contentTitle';
+import ContentSubTitle from './contentSubtitle';
 import CarouselArrow from './carouselArrow';
 import MostPopularItem from './mostpopularItem';
 import mostpopularitems from './mostpopularitems.json';
+import ShopNowBttn from './shopNowbttn';
 import InventoryItem from './inventoryItem';
 import inventoryitems from './inventoryitems.json';
 
+
+// main contents section : including "Most Popular", "Carouse Items", and "Inventory List"
 
 function Content() {
   return (
@@ -15,8 +20,8 @@ function Content() {
             <div className="row">
                 <div className="most-popular-wrap">
                     <div className="col-12 col-md-3 col-lg-4 float-left">
-                        <div className="mp-title">Most popular</div>
-                        <div className="mp-subtitle">We know you'll love these.</div> 
+                        <ContentTitle />
+                        <ContentSubTitle />
                         <div className="justify-content-center justify-content-sm-start mp-carousel-arrows">
                             <span className="mr-3"><CarouselArrow image="left-arrow.png" /></span>
                             <span className="ml-3"><CarouselArrow image="right-arrow.png" /></span>
@@ -32,7 +37,7 @@ function Content() {
                         </div>
                     </div>
                     <div className="col-12 col-md-4 justify-content-center justify-content-sm-start mp-bttn-shop-now">
-                        <button type="button" className="btn btn-dark bttn-shop-now">Shop Now</button>
+                        <ShopNowBttn />
                     </div>
                 </div>
             </div>

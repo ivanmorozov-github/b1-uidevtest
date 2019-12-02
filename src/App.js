@@ -1,10 +1,10 @@
 import React from 'react';
 
-// custom css
+// load fonts and custom css
 import './fonts.css';
 import './custom.css';
 
-// components and includes
+// load components and includes
 import Header from './components/headerComp/header';
 import Content from './components/contentComp/allContent';
 import Footer from './components/footerComp/footer';

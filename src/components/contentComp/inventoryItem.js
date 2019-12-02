@@ -1,5 +1,7 @@
 import React from 'react';
 
+// content section : list for inventory subsections gateways (large images with subsection titles)
+
 class InventoryItem extends React.Component {
     render() {
       

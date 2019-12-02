@@ -1,5 +1,7 @@
 import React from 'react';
 
+// component to render product rating (stars, 4 + 1) 
+
 class StarRating extends React.Component {
 
 

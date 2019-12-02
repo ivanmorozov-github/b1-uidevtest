@@ -1,10 +1,12 @@
 import React from 'react';
 import StarRating from './starRating'
 
+// content section : array of most popular items, based on mostpopularitems.json
+
 class MostPopularItem extends React.Component {
     render() {
       
-      var {image, title, price} = this.props;
+      var {image, title, currency, price} = this.props;
 
       return (
 
@@ -13,7 +15,7 @@ class MostPopularItem extends React.Component {
             <li><img className="mp-item-image" src={process.env.PUBLIC_URL + '/images/' + image + ".png"} /></li>
             <li><span className="mp-item-title">{title}</span></li>
             <li><span className="mp-item-rating"><StarRating /></span></li>
-            <li><span className="mp-item-price">{price}</span></li>
+            <li><span className="mp-item-price">${price}</span></li>
           </ul>
         </div>
 
