@@ -1,0 +1,18 @@
+[
+    {
+        "image": "product-1",
+        "title": "Hat Chair",
+        "price": "159.99"
+    },
+    {
+        "image": "product-3",
+        "title": "XAC Modern Lamp",
+        "price": "50.99"
+    },
+    {
+        "image": "room-1",
+        "title": "Circle Chair",
+        "price": "200.99"
+    }
+
+]
